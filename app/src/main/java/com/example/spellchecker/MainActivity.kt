@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity(), SpellCheckerSession.SpellCheckerSessio
             fetchSuggestionsFor(field.text.toString())
         }
 
-        fetchSuggestionsFor("Peter")
+        fetchSuggestionsFor("Peter livs in Brlin")
 
     }
 
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity(), SpellCheckerSession.SpellCheckerSessio
 
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            session.getSentenceSuggestions(arrayOf(TextInfo("Adti Leson")), NUMBER_OF_SUGGESTIONS)
+            session.getSentenceSuggestions(arrayOf(TextInfo(input)), NUMBER_OF_SUGGESTIONS)
         }
     }
 
