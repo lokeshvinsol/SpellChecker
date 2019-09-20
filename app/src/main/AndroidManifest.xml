@@ -18,17 +18,6 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".SpellingService"
-            android:permission="android.permission.BIND_TEXT_SERVICE"
-            >
-            <intent-filter >
-                <action android:name="android.service.textservice.SpellCheckerService" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.view.textservice.SpellCheckerSession"
-                android:resource="@xml/spellinginfo" />
-        </service>
     </application>
 
 </manifest>
